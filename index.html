@@ -19,6 +19,36 @@
     polaris-chip {
       margin: 16px;
     }
+    my-card {
+      --my-card-background-color: purple;
+      --my-card-text-color: yellow;
+      --my-card-border-color: yellow;
+    }
+    my-card.NazRied {
+      --my-card-background-color: green;
+      --my-card-text-color: blue;
+      --my-card-border-color: blue;
+    }
+      my-card.Curry {
+        --my-card-background-color: blue;
+        --my-card-text-color: yellow;
+        --my-card-border-color: yellow;
+      }
+      my-card.Jared {
+        --my-card-background-color: blue;
+        --my-card-text-color: white;
+        --my-card-border-color: white;
+      }
+      my-card.Jordan {
+        --my-card-background-color: red;
+        --my-card-text-color: white;
+        --my-card-border-color: black;
+      }
+      my-card.Najee {
+        --my-card-background-color: black;
+        --my-card-text-color: gold;
+        --my-card-border-color: gold;
+      }
   </style>
   <title>polaris-chip / my-card</title>
 </head>
@@ -26,13 +56,28 @@
 <body>
   <h1>polaris-chip</h1>
   <!-- this is going to do whatever the tag's defaults are -->
-  <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
+  <polaris-chip title="Need Record" link="https://psu.edu/"></polaris-chip>
   <polaris-chip title="Faculty and Staff"></polaris-chip>
   <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
   <polaris-chip title="Grants and donations"></polaris-chip>
 
   <h1>my-card</h1>
   <my-card></my-card>
+
+  <my-card class="NazRied" title="Naz Ried" src="data:image/webp;base64,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" 
+  alt="Naz Ried" paragraph="Naz Ried plays for the Timberwolves." buttonText="Look at Naz" buttonLink="https://www.espn.com/nba/player/_/id/4396971/naz-reid"></my-card>
+
+  <my-card class="Curry" title="Steph Curry" src="https://media.cnn.com/api/v1/images/stellar/prod/230501084147-02-steph-curry-warriors-kings-043023.jpg?c=original" 
+  alt="Steph Curry" paragraph="Curry is the best 3 point shooter." buttonText="Curry Button" buttonLink="https://www.nba.com/player/201939"></my-card>
+
+<my-card class="Jared" title="Jared McCain" src="https://cosxeuwlta.cloudimg.io/_outsports-prodweb_/uploads/2024/03/jared-mccain-ncaa-tournament-scaled-e1711320623646.jpg?auto=format&auto=compress&fit=crop&gravity=50p" 
+alt="Jared McCain" paragraph="Jared McCain was my favorite college basketball player of all time." buttonText="Jared Details" buttonLink="https://goduke.com/sports/mens-basketball/roster/jared-mccain/19455"></my-card>
+
+<my-card class="Jordan" title="Michael Jordan" src="https://do.lolwot.com/wp-content/uploads/2015/08/20-of-the-greatest-photos-of-michael-jordan-3.jpg" 
+alt="Michael Jordan" paragraph="Michael Jordan is the GOAT." buttonText="GOAT Button" buttonLink="https://www.basketball-reference.com/players/j/jordami01.html"></my-card>
+
+<my-card class ="Najee" title="Najee Harris" src="https://static.profootballnetwork.com/wp-content/uploads/2023/03/14174912/Najee-Harris-Dynasty-Profile-Fantasy-Outlook-Value-Projections-and-Rankings-1392x928.jpg" 
+alt="Najee Harris" paragraph="Najee Harris is my favorite running back." buttonText="Najee Button" buttonLink="https://www.espn.com/nfl/player/_/id/4241457/najee-harris"></my-card>
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
