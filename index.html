@@ -8,6 +8,13 @@
   <base href="/">
 
   <style>
+    my-card[fancy] {
+      --my-card-background-color: pink;
+      --my-card-border-color: hotpink;
+    }
+  </style>
+  
+  <style>
     :root,
     html,
     body {
@@ -19,6 +26,7 @@
     polaris-chip {
       margin: 16px;
     }
+  
     my-card {
       --my-card-background-color: purple;
       --my-card-text-color: yellow;
@@ -71,13 +79,15 @@
   alt="Steph Curry" paragraph="Curry is the best 3 point shooter." buttonText="Curry Button" buttonLink="https://www.nba.com/player/201939"></my-card>
 
 <my-card class="Jared" title="Jared McCain" src="https://cosxeuwlta.cloudimg.io/_outsports-prodweb_/uploads/2024/03/jared-mccain-ncaa-tournament-scaled-e1711320623646.jpg?auto=format&auto=compress&fit=crop&gravity=50p" 
-alt="Jared McCain" paragraph="Jared McCain was my favorite college basketball player of all time." buttonText="Jared Details" buttonLink="https://goduke.com/sports/mens-basketball/roster/jared-mccain/19455"></my-card>
+alt="Jared McCain" paragraph="Jared McCain was my favorite college basketball player of all time." buttonText="Jared Details" buttonLink="https://goduke.com/sports/mens-basketball/roster/jared-mccain/19455">
+<p class="Jared">Jared McCain was my favorite college basketball player of all time.</p></my-card>
 
 <my-card class="Jordan" title="Michael Jordan" src="https://do.lolwot.com/wp-content/uploads/2015/08/20-of-the-greatest-photos-of-michael-jordan-3.jpg" 
 alt="Michael Jordan" paragraph="Michael Jordan is the GOAT." buttonText="GOAT Button" buttonLink="https://www.basketball-reference.com/players/j/jordami01.html"></my-card>
 
 <my-card class ="Najee" title="Najee Harris" src="https://static.profootballnetwork.com/wp-content/uploads/2023/03/14174912/Najee-Harris-Dynasty-Profile-Fantasy-Outlook-Value-Projections-and-Rankings-1392x928.jpg" 
 alt="Najee Harris" paragraph="Najee Harris is my favorite running back." buttonText="Najee Button" buttonLink="https://www.espn.com/nfl/player/_/id/4241457/najee-harris"></my-card>
+
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
